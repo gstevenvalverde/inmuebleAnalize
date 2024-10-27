@@ -1,6 +1,26 @@
 from django.db import models
 
 # Create your models here.
-class Activos(models.Model):
-    id = models.CharField(max_length=100, auto_created=False, primary_key=True, verbose_name="ID")
-    nombre = models.CharField(max_length=100, null=False, verbose_name="Nombre")
+class Propiedad(models.Model):
+    id = models.AutoField(primary_key=True)
+    titulo = models.CharField(max_length=100)
+    descripcion = models.CharField(max_length=57000)
+    tipodepropiedad = models.CharField(max_length=29)
+    direccion = models.CharField(max_length=331)
+    ciudad = models.CharField(max_length=49)
+    provincia = models.CharField(max_length=21)
+    antiguedad = models.FloatField()
+    habitaciones = models.FloatField()
+    garages = models.FloatField()
+    banos = models.FloatField()
+    metroscubiertos = models.FloatField()
+    metrostotales = models.FloatField()
+    idzona = models.FloatField()
+    lat = models.FloatField()
+    lng = models.FloatField()
+    fecha = models.CharField(max_length=19)
+    gimnasio = models.FloatField()
+    usosmultiples = models.FloatField()
+    piscina = models.FloatField()
+    escuelascercanas = models.FloatField()
+    centroscomercialescercanos = models.FloatField()
