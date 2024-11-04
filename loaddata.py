@@ -12,7 +12,7 @@ conn = psycopg2.connect(
 cur = conn.cursor()
 
 # Ruta del archivo CSV
-ruta_csv = './inmuebles_sin_nan.csv'
+ruta_csv = './propiedades.csv'
 
 # Lee el archivo CSV y carga cada fila en la base de datos
 with open(ruta_csv, 'r') as archivo_csv:
