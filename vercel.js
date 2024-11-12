@@ -8,7 +8,7 @@
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "inmueblebi/wsgi.py"
+            "dest": "manage.py"
         }
     ]
 }
