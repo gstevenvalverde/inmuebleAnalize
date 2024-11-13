@@ -1,19 +1,19 @@
 {
-  "version": 2,
   "builds": [
     {
-      "src": "inmueblebi/wsgi.py",
-      "use": "@vercel/python"
+      "src": "/inmueblebi/wsgi.py",
+      "use": "@vercel/python",
+      "config": { "maxLambdaSize": "15mb" }
     }
   ],
   "routes": [
     {
-      "src": "/static/(.*)",
-      "dest": "/staticfiles/$1"
-    },
-    {
       "src": "/(.*)",
       "dest": "inmueblebi/wsgi.py"
+    },
+    {
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
     }
   ]
 }
