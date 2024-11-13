@@ -1,14 +1,15 @@
 {
   "builds": [
     {
-      "src": "inmueblebi/asgi.py",
-      "use": "@vercel/python"
+      "src": "inmueblebi/wsgi.py",
+      "use": "@vercel/python",
+      "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "inmueblebi/asgi.py"
+      "dest": "inmueblebi/wsgi.py"
     }
   ]
 }
