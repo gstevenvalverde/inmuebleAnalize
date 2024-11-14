@@ -1,1 +1,1 @@
-web: gunicorn inmueblebi.wsgi
+web: python manage.py collectstatic && gunicorn inmueblebi.wsgi
