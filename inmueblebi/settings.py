@@ -79,13 +79,13 @@ WSGI_APPLICATION = 'inmueblebi.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-
+# pXnPCFvqk7rBVRvw
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',
         'USER': 'postgres.ljuygntacktigchtdtvw',
-        'PASSWORD': 'nlPQJGHZ2WipB20Y',
+        'PASSWORD': 'pXnPCFvqk7rBVRvw',
         'HOST': 'aws-0-us-west-1.pooler.supabase.com',
         'PORT': '6543',
     }
